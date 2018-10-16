@@ -1,0 +1,107 @@
+" =========================================================================================
+" ==                                                                                     ==
+" ==                                VIM 配置文件                                         ==
+" ==                                                                                     ==
+" =========================================================================================
+" ==
+" == Author     : vincent ma (vincent_ma0001@hotmail.com)
+" == Version    : 1.0.0.4
+" == ChangeList :  
+" ==     1.0.0.0 - 创建基础配置文件
+" ==     1.0.0.1 - 添加界面配置（显示行号，语法高亮，突出当前行）
+" ==     1.0.0.2 - 添加molokai配色方案
+" ==     1.0.0.3 - 添加MiniBufExplorer
+" ==     1.0.0.4 - 添加window/linux判断,判断终端是否为gVim
+" ==
+" =========================================================================================
+
+source $VIMRUNTIME/vimrc_example.vim
+
+" =========================================================================================
+" 系统默认配置
+" =========================================================================================
+
+set diffexpr=MyDiff()
+function MyDiff()
+  let opt = '-a --binary '
+  if &diffopt =~ 'icase' | let opt = opt . '-i ' | endif
+  if &diffopt =~ 'iwhite' | let opt = opt . '-b ' | endif
+  let arg1 = v:fname_in
+  if arg1 =~ ' ' | let arg1 = '"' . arg1 . '"' | endif
+  let arg1 = substitute(arg1, '!', '\!', 'g')
+  let arg2 = v:fname_new
+  if arg2 =~ ' ' | let arg2 = '"' . arg2 . '"' | endif
+  let arg2 = substitute(arg2, '!', '\!', 'g')
+  let arg3 = v:fname_out
+  if arg3 =~ ' ' | let arg3 = '"' . arg3 . '"' | endif
+  let arg3 = substitute(arg3, '!', '\!', 'g')
+  if $VIMRUNTIME =~ ' '
+    if &sh =~ '\<cmd'
+      if empty(&shellxquote)
+        let l:shxq_sav = ''
+        set shellxquote&
+      endif
+      let cmd = '"' . $VIMRUNTIME . '\diff"'
+    else
+      let cmd = substitute($VIMRUNTIME, ' ', '" ', '') . '\diff"'
+    endif
+  else
+    let cmd = $VIMRUNTIME . '\diff'
+  endif
+  let cmd = substitute(cmd, '!', '\!', 'g')
+  silent execute '!' . cmd . ' ' . opt . arg1 . ' ' . arg2 . ' > ' . arg3
+  if exists('l:shxq_sav')
+    let &shellxquote=l:shxq_sav
+  endif
+endfunction
+
+" =========================================================================================
+"         判断操作系统是 Windows 还是 Linux 和判断是终端还是 Gvim 
+" =========================================================================================
+
+" 判断操作系统是否是 Windows 还是 Linux
+let g:iswindows = 0
+let g:islinux = 0
+if(has("win32") || has("win64") || has("win95") || has("win16"))
+    let g:iswindows = 1
+else
+    let g:islinux = 1
+endif
+
+" 判断是终端还是 Gvim 
+if has("gui_running")
+    let g:isGUI = 1
+else
+    let g:isGUI = 0
+endif
+
+" =========================================================================================
+" 界面配置
+" =========================================================================================
+
+" 设置行号
+set number
+
+" 自动语法高亮
+syntax on
+
+" 突出显示当前行
+set cursorline
+
+" =========================================================================================
+" molokai 配色方案
+" =========================================================================================
+" 设置配色方案 : molokai
+let g:molokai_original = 1
+colorscheme molokai
+
+" =========================================================================================
+" MiniBufExplorer 配置
+" =========================================================================================
+let g:miniBufExplMapWindowNavVim = 1 
+let g:miniBufExplMapWindowNavArrows = 1 
+let g:miniBufExplMapCTabSwitchBufs = 1 
+let g:miniBufExplModSelTarget = 1 
+
+let g:bufExplorerMaxHeight=30
+let g:miniBufExplorerMoreThanOne=0
