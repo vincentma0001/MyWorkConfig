@@ -6,7 +6,7 @@
 // Brief        : 
 // Create time 	: $DATE$ $HOUR_02$:$MINUTE$:$SECOND$
 // Modify time 	: $DATE$ $HOUR_02$:$MINUTE$:$SECOND$
-// Note 		:
+// Note         :
 //
 /////////////////////////////////////////////////////////////////////////////////////////
 //
