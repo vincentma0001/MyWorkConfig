@@ -1,10 +1,10 @@
 /////////////////////////////////////////////////////////////////////////////////////////
 //
 // File name 	: $FILE_BASE$.$FILE_EXT$
-// Version 		: 1.0.0.0
+// Version      : 1.0.0.0
+// Author       : v.m.
+// Brief        : 
 // Create time 	: $DATE$ $HOUR_02$:$MINUTE$:$SECOND$
-// Author 		: v.m.
-// Brief 		: 
 // Modify time 	: $DATE$ $HOUR_02$:$MINUTE$:$SECOND$
 // Note 		:
 //
