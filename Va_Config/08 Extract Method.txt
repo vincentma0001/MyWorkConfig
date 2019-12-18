@@ -1,5 +1,5 @@
 /////////////////////////////////////////////////////////////////////////////////////////
-// Name      : $SymbolContext$
+// Name      : $SymbolName$
 // Parameter : $ParameterList$
 // Return    : $SymbolType$
 // Notes     : 
