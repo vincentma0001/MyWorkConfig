@@ -1,8 +1,8 @@
 /////////////////////////////////////////////////////////////////////////////////////////
 // Name      : $SymbolName$
-// Parameter : $ParameterList$
+// Brief     :
 // Return    : $SymbolType$
-// Notes     : 
+// Parameter : $MethodArg$
 $end$$SymbolType$ $SymbolContext$($ParameterList$) $MethodQualifier$
 {
 	$MethodBody$

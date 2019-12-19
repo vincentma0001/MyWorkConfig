@@ -1,6 +1,6 @@
 /////////////////////////////////////////////////////////////////////////////////////////
 // Name      : $SymbolName$
-// Parameter : $MethodArg$
+// Brief     :
 // Return    : $SymbolType$
-// Notes     : 
+// Parameter : $MethodArg$
 $end$
