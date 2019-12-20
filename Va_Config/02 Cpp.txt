@@ -2,8 +2,8 @@
 //
 // File name    : $FILE_BASE$.$FILE_EXT$
 // Version      : 0.0.0.0
-// Author       : v.m.
 // Brief        : 
+// Author       : v.m.
 // Create time  : $DATE$ $HOUR_02$:$MINUTE$:$SECOND$
 // Modify time  : $DATE$ $HOUR_02$:$MINUTE$:$SECOND$
 // Note         :
