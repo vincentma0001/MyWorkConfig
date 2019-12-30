@@ -14,7 +14,7 @@ public:
     // Construct define
     $classname$(){};
     // Destruct define
-    ~$classname$(){};
+    virtual ~$classname$(){};
     
 private:
     // No Copy

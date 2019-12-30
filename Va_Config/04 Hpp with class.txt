@@ -47,7 +47,7 @@ public:
     // Construct define
     $FILE_BASE$(){};
     // Destruct define
-    ~$FILE_BASE$(){};
+    virtual ~$FILE_BASE$(){};
     
 private:
     // No Copy
