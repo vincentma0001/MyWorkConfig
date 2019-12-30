@@ -1,5 +1,5 @@
 /////////////////////////////////////////////////////////////////////////////////////////
-// Name      : $SymbolName$()
+// Name      : $SymbolName$(...)
 // Brief     :
 // Return    : $SymbolType$
 // Parameter : $MethodArg$
@@ -7,5 +7,5 @@ $SymbolType$ $SymbolContext$($ParameterList$) $MethodQualifier$
 {
 	$end$$MethodBody$
 }
-// End of function $SymbolName$()
+// End of function $SymbolName$(...)
 /////////////////////////////////////////////////////////////////////////////////////////
