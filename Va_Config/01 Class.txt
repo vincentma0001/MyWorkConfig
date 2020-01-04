@@ -12,7 +12,7 @@ class $classname$
 // Construct && Destruct
 public:
     // Construct define
-    $classname$(){};
+    explicit $classname$(){};
     // Destruct define
     virtual ~$classname$(){};
     

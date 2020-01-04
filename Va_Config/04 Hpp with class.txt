@@ -45,7 +45,7 @@ class $FILE_BASE$
 // Construct && Destruct
 public:
     // Construct define
-    $FILE_BASE$(){};
+    explicit $FILE_BASE$(){};
     // Destruct define
     virtual ~$FILE_BASE$(){};
     
