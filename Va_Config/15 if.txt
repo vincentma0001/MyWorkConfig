@@ -1,0 +1,43 @@
+
+/////////////////////////////////////////////////////////////////////////////////////////////////////////////////
+// Title     : if () { ... }
+// Short cut : if
+
+// #  TODO : Add condition brife here ##
+if ($condition=_Condition$)
+{
+	$selected$
+} 
+// End of if ($condition$) ...
+
+/////////////////////////////////////////////////////////////////////////////////////////////////////////////////
+// Title     : if () { ... } else {  }
+// Short cut : 
+
+// #  TODO : Add condition brife here ##
+if ($condition=_Condition$)
+{
+	$selected$
+} 
+// #  TODO : Add condition brife for else here ##
+else // else if ($condition$)...
+{
+}     
+// End of if($condition$)...
+
+/////////////////////////////////////////////////////////////////////////////////////////////////////////////////
+// Title     : if () { } else { ... }
+// Short cut : 
+
+// #  TODO : Add condition brife here ##
+if ($condition=_Condition$)
+{
+} 
+// #  TODO : Add condition brife for else here ##
+else // else if ($condition$)...
+{
+	$selected$
+}     
+// End of if($condition$)...
+
+/////////////////////////////////////////////////////////////////////////////////////////////////////////////////

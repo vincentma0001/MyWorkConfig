@@ -15,7 +15,7 @@
 /////////////////////////////////////////////////////////////////////////////////////////
 
 /////////////////////////////////////////////////////////////////////////////////////////
-// Disable warnings :
+// Disable warning
 // Example : #pragma warning(disable:4996)
 // #if defined (_MSC_VER)
 // #   pragma warning(disable:4996)
@@ -28,23 +28,28 @@
 // Config files included
 
 // platform files included
-#if defined(_V_PLATFORM_) && ( _V_PLATFORM_ == __V_PF_WIN__ )
-#include <windows.h>
-#endif // #if defined(_V_PLATFORM_)...
-
-// Used files included
 
 // Declare file included
-#include "$FILE_BASE$.h"
+#include <vmLibBase/CUnitTestFrame.h>
+
+// Unit test files include
 
 /////////////////////////////////////////////////////////////////////////////////////////
-// using namespace
-namespace vm{
 
-$end$
+int main( int argc, char** argv )
+{
+// --------------------------------------------------------------------------------------
+// TODO : add main functions there
+    // example : RUN_UNITTEST( ut_XXXX );
+
+
+// ------------------------------------------------------------------------------------
+	::system("Pause");
+	return 0;
+} // End of main(...)
 
 /////////////////////////////////////////////////////////////////////////////////////////
-} // End of namespace vm
+
 /////////////////////////////////////////////////////////////////////////////////////////
 // End of file $FILE_BASE$.$FILE_EXT$
 /////////////////////////////////////////////////////////////////////////////////////////

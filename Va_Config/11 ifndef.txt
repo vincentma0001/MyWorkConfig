@@ -1,0 +1,3 @@
+#ifndef   $condition=_DEBUG$$end$
+$selected$
+#endif // $condition$

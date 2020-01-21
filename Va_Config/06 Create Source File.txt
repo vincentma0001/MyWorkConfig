@@ -2,8 +2,8 @@
 //
 // File name    : $FILE_BASE$.$FILE_EXT$
 // Version      : 0.0.0.0
-// Author       : v.m.
 // Brief        : 
+// Author       : v.m.
 // Create time  : $DATE$ $HOUR_02$:$MINUTE$:$SECOND$
 // Modify time  : $DATE$ $HOUR_02$:$MINUTE$:$SECOND$
 // Note         :
@@ -15,7 +15,26 @@
 /////////////////////////////////////////////////////////////////////////////////////////
 
 /////////////////////////////////////////////////////////////////////////////////////////
-// include file
+// Disable warnings :
+// Example : #pragma warning(disable:4996)
+// #if defined (_MSC_VER)
+// #   pragma warning(disable:4996)
+// #endif
+
+/////////////////////////////////////////////////////////////////////////////////////////
+// Include files :
+// Standard c/c++ files included
+
+// Config files included
+
+// platform files included
+#if defined(_V_PLATFORM_) && ( _V_PLATFORM_ == __V_PF_WIN__ )
+#include <windows.h>
+#endif // #if defined(_V_PLATFORM_)...
+
+// Used files included
+
+// Declare file included
 #include "$FILE_BASE$.h"
 
 /////////////////////////////////////////////////////////////////////////////////////////

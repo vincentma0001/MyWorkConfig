@@ -1,0 +1,9 @@
+/////////////////////////////////////////////////////////////////////////////////////////
+// Method    : $Method$(...)
+// Brief     : # add method brief here #
+// Return    : return                                    -     # add return value notes #
+// Parameter : Param1                                    - [O] # add param1 value notes #
+//           : Param2                                    - [I] # add param2 value notes #
+$end$$selected$
+// End of function $Method$(...)
+/////////////////////////////////////////////////////////////////////////////////////////
