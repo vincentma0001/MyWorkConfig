@@ -5,3 +5,10 @@ Content  : // ------------------------------------------------------------------
 Title    : /////////
 Shortcut : ///
 Content  : /////////////////////////////////////////////////////////////////////////////////////////
+
+Title    : #define
+Shortcut : #def
+Content  :
+#ifndef     $Condition$
+#    define $Condition$ $end$
+#endif   // $Condition$
